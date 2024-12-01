@@ -1,1 +1,45 @@
 # Implementare
+
+## Schema Bloc
+
+!TODO: Add block scheme
+
+Automatul a fost implementat pe 4 biți care codifică 4 variabile de stare: Q~3~ (cel mai semnificativ), Q~2~, Q~1~, Q~0~. Variabilele de stare codifică 15 
+stări pe care automatul le poate avea. Semnalele de decizie sunt active pe 1. Semnalele de ieșire sunt active pe 0.
+
+Stări:
+
+* INACTIVE (0000) = Aparatul este oprit
+* ACTIVE (0001) = Aparatul este activ în așteptare
+* MANUAL (0101) = Aparatul funcționează manual (primește instrucțiuni manual)
+* AUTO (0011) = Aparatul funcționează automat
+* DETECT (0111) = Aparatul a detectat un individ/obiect în spațiul protejat
+* REC_INSTR (1101) = Aparatul primește instrucțiuni remote
+* CONF_INSTR (1001) = Aparatul a confirmat primirea instrucțiunilor remote
+* TRANS_INFO (1111) = Aparatul a transmis datele primite de la senzor către modulul de țintire
+* TRANS_INST (1010) = Aparatul a transmis instructiunile primite către modulul de țintire
+* LOG_TARG (1110) = Aparatul a transmis informațiile de log către modulul de logging
+* ON_TARG (0110) = Aparatul a pus mitraliera pe individ/obiect
+* POS_FIRE (0010) = Aparatul a verificat că mitraliera poate să tragă (are muniție, etc)
+* SIG_FIRE (1100) = Aparatul a încercat să pornească mitraliera
+* WAIT_FIRE (0100) = Aparatul așteaptă pornirea mitralierei
+* STAT_FIRE (1011) = Aparatul a impușcat individul/obiectul
+
+Semnale Decizii:
+
+* ACT = Instrucțiunea de decizie prin care un dispozitiv auxiliar pornește sau oprește automatul
+* MAN = Instrucțiunea de decizie prin care un utilizator alege dacă automatul funcționează automat sau prin instrucțiuni primite remote
+* INST = Instrucțiunea de decizie prin care se verifică dacă automatul primește instrucțiuni
+* DET = Instrucțiune de decizie prin care se verifică detectarea unui individ/obiect în zona protejată
+* ON_SIGHT = Instrucțiunea de decizie prin care se verifică poziționarea mitralierei pe individ/obiect
+* CAN_FIRE = Instrucțiunea de decizie prin care se verifică dacă mitraliera este funcțională
+* STATUS = Instrucțiunea de decizie prin care se verifică dacă mitraliera a început să tragă
+* T_O = Instrucțiunea de decizie (timer) prin care se verifică dacă a trecut perioada de timp în care trebuia să se pornească mitraliera (time_out)
+
+Semnale Ieșiri:
+
+* DAT = Automatul transmite informațiile primite de la senzor către modulul de țintire
+* RCV = Automatul primește instrucțiunile trimise remote
+* FIRE = Automatul trimite semnalul de foc/tragere către mitralieră
+* LOG = Automatul trimite informații relevante catre unitatea de logging
+
