@@ -1,0 +1,26 @@
+project:
+  type: book
+
+book:
+  title: "Mitraliera Santinela Automata (Sentry Gun)"
+  author: "Simion Stefan"
+  date: "12/1/2024"
+  chapters:
+    - index.qmd
+    - ./src/implementation.qmd
+    - ./src/functionality.qmd
+    - ./src/organigram.qmd
+    - ./src/space.qmd
+    - ./src/transition.qmd
+    - ./src/results.qmd
+    - ./src/entry_cbb.qmd
+    - ./src/circuit.qmd
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+
+
