@@ -1,1 +1,9 @@
 # Subiectul Temei
+
+Tema proiectului constă în realizarea sintezei logice a unității de comandă al unui sentry gun (mitralieră santinelă automată). Automatul are următoarea 
+funcționalitate:
+
+* detectarea automată a obiectului/individului ce intră în perimetrul protejat
+* poziționarea mitralierei pe obiectul/individului ce a intrat în perimetrul protejat
+* împușcarea automată a obiectului/individului ce a intrat în perimetrul protejat
+* primirea de instrucțiuni remote pentru controlul funcțiilor de țintire și împușcare
