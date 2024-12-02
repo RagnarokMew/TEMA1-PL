@@ -5,7 +5,7 @@
 !TODO: Add block scheme
 
 Automatul a fost implementat pe 4 biți care codifică 4 variabile de stare: Q~3~ (cel mai semnificativ), Q~2~, Q~1~, Q~0~. Variabilele de stare codifică 15 
-stări pe care automatul le poate avea. Semnalele de decizie sunt active pe 1. Semnalele de ieșire sunt active pe 0.
+stări pe care automatul le poate avea. Semnalele active pe 1.
 
 Stări:
 
