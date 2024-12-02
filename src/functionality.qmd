@@ -1,1 +1,33 @@
 # Functionalitate
+
+Automatul pornește în starea ``INACTIVE`` în care este oprit. Acesta se activează când primeste semnalul de pornire (``ACT``) și ajunge în starea ``ACTIVE``.
+
+Dacă este selectat modul de funcționare manual prin semnalul ``MAN``, atunci automatul intră în starea ``MANUAL``. Dacă acesta nu primește instrucțiuni atunci 
+acesta se reîntoarce în starea ``INACTIVE``. Dacă primește instrucțiuni (``INST``) automatul trece în starea ``REC_INSTR``, apoi trimite semnalul <code style="text-decoration:overline">RCV</code>, 
+confirmând că a primit instrucțiunile. Automatul trece în starea ``CONF_INSTR``, și trimite semnalul <code style="text-decoration:overline">DAT</code>, semnalând 
+că trimite instrucțiunile primite către modulul de țintire. Apoi trece în starea ``TRANS_INST`` și trimite semnalul <code style="text-decoration:overline">LOG</code> 
+indicând că trimite informații de log (instrucțiunile primite și pașii îndepliniți pentru a le urma) către modulul de logging și trece în starea ``ON_TARG``, 
+mitraliera fiind poziționată pe locația dorită.
+
+Dacă nu a fost selectat modul de funcționare manual, sentry gun-ul intră în modul automat, trecând în starea ``AUTO``. Dacă senzorul detectează un individ/obiect 
+în spatiul protejat aparatul trece în starea ``DETECT``, fiind conștientizată prezența unui individ/obiect, altfel în ``INACTIVE``. Din ``DETECT``, automatul 
+trimite semnalul <code style="text-decoration:overline">DAT</code> semnalând că trimite datele primite de la senzor către modulul de țintire și trece în starea 
+``TRANS_INFO``. Apoi acesta transmite semnalul <code style="text-decoration:overline">LOG</code>, indicând că transmite informatiile de log 
+(informațiile primite de la senzor și pașii îndepliniți pentru a ținti mitraliera pe individ/obiect) către modulul de logging și trece în starea ``LOG_TARG``. 
+Dacă mitraliera este poziționată corect pe individ/obiect primește semnalul ``ON_SIGHT``și trece în starea ``ON_TARG``, aparatul știind că are mitraliera 
+poziționată corect pe individ/obiect, altfel trece în starea ``AUTO``.
+
+Din starea ``ON_TARG`` automatul verifică dacă mitraliera este funcțională (are muniție, etc) prin semnalul ``CAN_FIRE``. Dacă mitraliera nu poate trage, 
+automatul trece în starea ``INACTIVE``, iar dacă aceasta este funcțională trece în starea ``POS_FIRE``, aparatul având posibilitatea de a trage în locul dorit 
+sau în individul/obiectul care a intrat în spațiul protejat. Având posibilitatea de a trage, automatul trimite semnalul <code style="text-decoration:overline">FIRE</code> 
+către mitraliera pentru a o porni și trece în starea ``SIG_FIRE``. Apoi automatul verifică dacă mitraliera a început să tragâ prin semnalul ``STATUS``.
+
+Dacă mitraliera nu a început să tragă, atunci automatul trece în starea ``WAIT_FIRE``, aparatul așteptând să pornească mitraliera. Automatul verifică dacă a 
+trecut prea mult timp de când a trimis primul semnal de <code style="text-decoration:overline">FIRE</code> (= dacă a făcut timeout), prin semnalul ``T_O``. Dacă 
+da, atunci trece în starea ``INACTIVE``, iar dacă nu trece în starea ``POS_FIRE``.
+
+Dacă mitraliera pornește (automatul primește semnalul ``STATUS``), atunci automatul trece în starea ``STAT_FIRE``, aparatul împușcând locația dorită sau 
+individul/obiectul care a intrat în spațiul protejat și trimite semnalul <code style="text-decoration:overline">LOG</code>, indicând că transmite informații 
+de log (cât a durat să se pornească mitraliera, muniția consumată, etc), către modulul de logging și trece în starea ``ACTIVE``.
+
+
