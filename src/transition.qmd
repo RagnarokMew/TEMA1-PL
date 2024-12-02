@@ -3,18 +3,18 @@
 | Q~3~^t^ | Q~2~^t^ | Q~1~^t^ | Q~0~^t^ | Q~3~^t+1^ | Q~2~^t+1^ | Q~1~^t+1^ | Q~0~^t+1 | Exits |
 |:-------:|:-------:|:-------:|:-------:|:---------:|:---------:|:---------:|:--------:|:------|
 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | ACT | 0 |
-| 0 | 0 | 0 | 1 | 0 | MAN | <code style="text-decoration:overline">MAN</code> | 1 | 0 |
-| 0 | 0 | 1 | 0 | 1 | 1 | 0 | 0 | <code style="text-decoration:overline">FIRE</code> |
+| 0 | 0 | 0 | 1 | 0 | MAN | <span style="text-decoration:overline">MAN</span> | 1 | 0 |
+| 0 | 0 | 1 | 0 | 1 | 1 | 0 | 0 | <span style="text-decoration:overline">FIRE</span> |
 | 0 | 0 | 1 | 1 | 0 | DET | DET | DET | 0 |
-| 0 | 1 | 0 | 0 | 0 | 0 | <code style="text-decoration:overline">T_O</code> | 0 | 0 |
+| 0 | 1 | 0 | 0 | 0 | 0 | <span style="text-decoration:overline">T_O</span> | 0 | 0 |
 | 0 | 1 | 0 | 1 | INST | INST | 0 | INST | 0 |
 | 0 | 1 | 1 | 0 | 0 | 0 | CAN_FIRE | 0 | 0 |
-| 0 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | <code style="text-decoration:overline">DAT</code> |
+| 0 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | <span style="text-decoration:overline">DAT</span> |
 | 1 | 0 | 0 | 0 | * | * | * | * | * |
-| 1 | 0 | 0 | 1 | 1 | 0 | 1 | 0 | <code style="text-decoration:overline">DAT</code> |
-| 1 | 0 | 1 | 0 | 0 | 1 | 1 | 0 | <code style="text-decoration:overline">LOG</code> |
-| 1 | 0 | 1 | 1 | 0 | 0 | 0 | 1 | <code style="text-decoration:overline">LOG</code> |
-| 1 | 1 | 0 | 0 | STATUS | <code style="text-decoration:overline">STATUS</code> | STATUS | STATUS | 0 |
-| 1 | 1 | 0 | 1 | 1 | 0 | 0 | 1 | <code style="text-decoration:overline">RCV</code> | 
-| 1 | 1 | 1 | 0 | 0 | ON_SIGHT | 1 | <code style="text-decoration:overline">ON_SIGHT</code> | 0 |
-| 1 | 1 | 1 | 1 | 1 | 1 | 1 | 0 | <code style="text-decoration:overline">LOG</code> | 
+| 1 | 0 | 0 | 1 | 1 | 0 | 1 | 0 | <span style="text-decoration:overline">DAT</span> |
+| 1 | 0 | 1 | 0 | 0 | 1 | 1 | 0 | <span style="text-decoration:overline">LOG</span> |
+| 1 | 0 | 1 | 1 | 0 | 0 | 0 | 1 | <span style="text-decoration:overline">LOG</span> |
+| 1 | 1 | 0 | 0 | STATUS | <span style="text-decoration:overline">STATUS</span> | STATUS | STATUS | 0 |
+| 1 | 1 | 0 | 1 | 1 | 0 | 0 | 1 | <span style="text-decoration:overline">RCV</span> | 
+| 1 | 1 | 1 | 0 | 0 | ON_SIGHT | 1 | <span style="text-decoration:overline">ON_SIGHT</span> | 0 |
+| 1 | 1 | 1 | 1 | 1 | 1 | 1 | 0 | <span style="text-decoration:overline">LOG</span> | 
