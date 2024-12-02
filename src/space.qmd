@@ -1,1 +1,8 @@
 # Spatiul Starilor
+
+| Q~3~Q~2~ \\ Q~1~Q~0~ | 00 | 01 | 11 | 10 |
+|:-------------------:|:--:|:--:|:--:|:--:|
+| 00 | INACTIVE | ACTIVE | AUTO | POS_FIRE |
+| 01 | WAIT_FIRE | MANUAL | DETECT | ON_TARG |
+| 11 | SIG_FIRE | REC_INSTR | TRANS_INFO | LOG_TARG |
+| 10 | * | CONF_INSTR | STAT_FIRE | TRANS_INST |
