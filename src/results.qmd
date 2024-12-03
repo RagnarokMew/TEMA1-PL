@@ -9,7 +9,7 @@
 | 11 | STATUS | 1 | 1 | 0 |
 | 10 | * | 1 | 0 | 0 |
 
-$Q_3^{t+1} = \overline{Q_3} \space \overline{Q_2}Q_1\overline{Q_0} + Q_2Q_1Q_0 + Q_3\overline{Q_1}Q_0 + \text{STATUS} Q_3\overline{Q_1} + \text{INST} Q_2Q_0$
+$Q_3^{t+1} = \overline{Q_3}\ \overline{Q_2}Q_1\overline{Q_0} + Q_2Q_1Q_0 + Q_3\overline{Q_1}Q_0 + \text{STATUS} Q_3\overline{Q_1} + \text{INST} Q_2Q_0$
 
 ## Q~2~^t+1^ 
 
@@ -20,8 +20,8 @@ $Q_3^{t+1} = \overline{Q_3} \space \overline{Q_2}Q_1\overline{Q_0} + Q_2Q_1Q_0 +
 | 11 | $\overline{\text{STATUS}}$ | 0 | 1 | ON_SIGHT |
 | 10 | * | 0 | 0 | 1 |
 
-$Q_2^{t+1} = \overline{Q_2}Q_1\overline{Q_0} + Q_2Q_1Q_0 + \text{ON\_SIGHT} Q_3Q_1\overline{Q_0} + \text{MAN} \overline{Q_3} \space \overline{Q_2}\space\overline{Q_1}Q_0
-+ \text{DET}\overline{Q_3}Q_1Q_0 + \text{INST}\overline{Q_3}Q_2Q_0 + \overline{\text{STATUS}}Q_3\overline{Q_1}\space\overline{Q_0}$ 
+$Q_2^{t+1} = \overline{Q_2}Q_1\overline{Q_0} + Q_2Q_1Q_0 + \text{ON\_SIGHT} Q_3Q_1\overline{Q_0} + \text{MAN} \overline{Q_3}\ \overline{Q_2}\ \overline{Q_1}Q_0
++ \text{DET}\overline{Q_3}Q_1Q_0 + \text{INST}\overline{Q_3}Q_2Q_0 + \overline{\text{STATUS}}Q_3\overline{Q_1}\ \overline{Q_0}$ 
 
 ## Q~1~^t+1^ 
 
@@ -32,8 +32,8 @@ $Q_2^{t+1} = \overline{Q_2}Q_1\overline{Q_0} + Q_2Q_1Q_0 + \text{ON\_SIGHT} Q_3Q
 | 11 | STATUS | 0 | 1 | 1 |
 | 10 | * | 1 | 0 | 1 |
 
-$Q_1^{t+1} = Q_3Q_1\overline{Q_0} + Q_2Q_1Q_0 + Q_3\overline{Q_2}\space\overline{Q_1} + \overline{\text{T\_O}}\space\overline{Q_3}Q_2\overline{Q_1}\space\overline{Q_0}
-+ \text{STATUS}Q_3\overline{Q_1}\space\overline{Q_0} + \overline{\text{MAN}}\space\overline{Q_2}\space\overline{Q_1}Q_0 + \text{DET}\overline{Q_3}Q_1Q_0 +
+$Q_1^{t+1} = Q_3Q_1\overline{Q_0} + Q_2Q_1Q_0 + Q_3\overline{Q_2}\ \overline{Q_1} + \overline{\text{T\_O}}\ \overline{Q_3}Q_2\overline{Q_1}\ \overline{Q_0}
++ \text{STATUS}Q_3\overline{Q_1}\ \overline{Q_0} + \overline{\text{MAN}}\ \overline{Q_2}\ \overline{Q_1}Q_0 + \text{DET}\overline{Q_3}Q_1Q_0 +
 \text{CAN\_FIRE}Q_2Q_1$
 
 ## Q~0~^t+1^ 
@@ -45,9 +45,9 @@ $Q_1^{t+1} = Q_3Q_1\overline{Q_0} + Q_2Q_1Q_0 + Q_3\overline{Q_2}\space\overline
 | 11 | STATUS | 1 | 0 | $\overline{\text{ON\_SIGHT}}$ |
 | 10 | * | 0 | 1 | 0 |
 
-$Q_0^{t+1} = Q_3\overline{Q_2}Q_1Q_0 + \overline{Q_3}Q_2Q_1Q_0 + \overline{Q_3}\space\overline{Q_2}\space\overline{Q_1}Q_0 + Q_3Q_2\overline{Q_1}Q_0 +
-\overline{\text{ON\_SIGHT}}Q_3Q_2Q_1\overline{Q_0} + \text{DET}\overline{Q_3}Q_1Q_0 + \text{ACT}\overline{Q_3}\space\overline{Q_2}\space\overline{Q_1} +
-\text{INST}Q_2\overline{Q_1}Q_0 + \text{STATUS}Q_3\overline{Q_1}\space\overline{Q_0}$
+$Q_0^{t+1} = Q_3\overline{Q_2}Q_1Q_0 + \overline{Q_3}Q_2Q_1Q_0 + \overline{Q_3}\ \overline{Q_2}\ \overline{Q_1}Q_0 + Q_3Q_2\overline{Q_1}Q_0 +
+\overline{\text{ON\_SIGHT}}Q_3Q_2Q_1\overline{Q_0} + \text{DET}\overline{Q_3}Q_1Q_0 + \text{ACT}\overline{Q_3}\ \overline{Q_2}\ \overline{Q_1} +
+\text{INST}Q_2\overline{Q_1}Q_0 + \text{STATUS}Q_3\overline{Q_1}\ \overline{Q_0}$
 
 ## DAT
 
@@ -58,7 +58,7 @@ $Q_0^{t+1} = Q_3\overline{Q_2}Q_1Q_0 + \overline{Q_3}Q_2Q_1Q_0 + \overline{Q_3}\
 | 11 | 0 | 0 | 0 | 0 |
 | 10 | * | 1 | 0 | 0 |
 
-$\text{DAT} = \overline{Q_3}Q_2Q_1Q_0 + Q_3\overline{Q_2}\space\overline{Q_1}$
+$\text{DAT} = \overline{Q_3}Q_2Q_1Q_0 + Q_3\overline{Q_2}\ \overline{Q_1}$
 
 ## RCV
 
@@ -91,4 +91,4 @@ $\text{LOG} = Q_3Q_1Q_0 + Q_3\overline{Q_2}Q_1$
 | 11 | 0 | 0 | 0 | 0 |
 | 10 | * | 0 | 0 | 0 |
 
-$\text{FIRE} = \overline{Q_3}\space\overline{Q_2}Q_1\overline{Q_0}$
+$\text{FIRE} = \overline{Q_3}\ \overline{Q_2}Q_1\overline{Q_0}$
