@@ -1,1 +1,3 @@
 # Organigrama
+
+![Organigrama Automatului](./../img/organigrama.png)
