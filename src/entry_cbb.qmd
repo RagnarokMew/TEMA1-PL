@@ -1,1 +1,167 @@
 # Diagrame Karnaugh si ecuatiile rezultate pentru intrarile CBB-urilor
+
+## Q~0~
+
+Implementat printr-un CBB tip D și un Mux 16:1
+
+## Q~1~
+
+Implementat printr-un CBB de tip JK; J implementat cu porți NAND și K implementat cu porți NOR
+
+| Q~1~^t^ | Q~1~^t+1^ | J~1~ | K~1~ |
+|:-------:|:---------:|:----:|:----:|
+| 0 | 0 | 0 | * |
+| 0 | $\overline{\text{MAN}}$ | $\overline{\text{MAN}}$ | * |
+| 1 | 0 | * | 1 |
+| 1 | DET | * | $\overline{\text{DET}}$ |
+| 0 | $\overline{\text{T\_O}}$ | $\overline{\text{T\_O}}$ | * |
+| 0 | 0 | 0 | * |
+| 1 | CAN_FIRE | * | $\overline{\text{CAN\_FIRE}}$ |
+| 1 | 1 | * | 0 |
+| 0 | * | * | * |
+| 0 | 1 | 1 | * |
+| 1 | 1 | * | 0 |
+| 1 | 0 | * | 1 |
+| 0 | STATUS | STATUS | * |
+| 0 | 0 | 0 | * |
+| 1 | 1 | * | 0 |
+| 1 | 1 | * | 0 |
+
+### J1
+
+| Q~3~Q~2~ \\ Q~1~Q~0~ | 00 | 01 | 11 | 10 |
+|:--------------------:|:--:|:--:|:--:|:--:|
+| 00 | 0 | $\overline{\text{MAN}}$ | * | * |
+| 01 | $\overline{\text{T\_O}}$ | 0 | * | * |
+| 11 | STATUS | 0 | * | * |
+| 10 | * | 1 | * | * |
+
+$J_1 = Q_3\overline{Q_2} + \overline{\text{MAN}}\ \overline{Q_2}Q_0 + \text{STATUS}Q_3\overline{Q_0} + \overline{\text{T\_O}}\ \overline{Q_3}Q_2
+\overline{Q_0}$
+
+### K1
+
+| Q~3~Q~2~ \\ Q~1~Q~0~ | 00 | 01 | 11 | 10 |
+|:--------------------:|:--:|:--:|:--:|:--:|
+| 00 | * | * | $\overline{\text{DET}}$ | 1 |
+| 01 | * | * | 0 | $\overline{\text{CAN\_FIRE}}$ |
+| 11 | * | * | 0 | 0 |
+| 10 | * | * | 1 | 0 |
+
+$K_1 = \overline{Q_3}\ \overline{Q_2}\ \overline{Q_0} + \overline{\text{DET}}\ \overline{Q_3} \overline{Q_2} + \overline{\text{CAN\_FIRE}}\ \overline{Q_3}\ 
+\overline{Q_0}$
+
+## Q~2~
+
+Implementat printr-un CBB de tip D și un Mux 2:1.
+
+Am ales Q~3~ ca bit de selectie.
+
+### Q~3~ = 0
+
+| Q~2~ \\ Q~1~Q~0~ | 00 | 01 | 11 | 10 |
+|:--------------------:|:--:|:--:|:--:|:--:|
+| 0 | 0 | MAN | DET | 1 |
+| 1 | * | INST | 1 | 0 |
+
+$\text{Intrarea 0:}\ Q_2Q_1Q_0 + \overline{Q_2}Q_1\overline{Q_0} + \text{DET}\overline{Q_2}Q_1 + MAN \overline{Q_2}\ \overline{Q_1}Q_0 + \text{INST}Q_2Q_0$
+
+### Q~3~ = 1
+
+| Q~2~ \\ Q~1~Q~0~ | 00 | 01 | 11 | 10 |
+|:--------------------:|:--:|:--:|:--:|:--:|
+| 0 | $\overline{\text{STATUS}}$ | 0 | 1 | ON_SIGHT |
+| 1 | * | 0 | 0 | 1 |
+
+$\text{Intrarea 1:}\ \overline{Q_2}Q_1Q_0 + Q_2\overline{Q_0} + \overline{\text{STATUS}}\ \overline{Q_1}\ \overline{Q_0} + \text{ON\_SIGHT}Q_1\overline{Q_0}$
+
+## Q~3~
+
+Implementat printr-un CBB de tip JK; J este implementat printr-un Mux 4:1 și K este implementat printr-un MUX 8:1
+
+### J~3~
+
+| Q~3~Q~2~ \\ Q~1~Q~0~ | 00 | 01 | 11 | 10 |
+|:--------------------:|:--:|:--:|:--:|:--:|
+| 00 | 0 | 0 | 0 | 1 |
+| 01 | 0 | INST | 1 | 0 |
+| 11 | * | * | * | * |
+| 10 | * | * | * | * |
+
+Am ales ca variabile de selecție Q~3~ și Q~2~.
+
+#### Q~3~Q~2~ = 00
+
+| Q~1~ \\ Q~2~ | 0 | 1 |
+|:------------:|:-:|:-:|
+| 0 | 0 | 0 |
+| 1 | 1 | 0 |
+
+$\text{Intrarea 00:}\ Q_1\overline{Q_0}$
+
+#### Q~3~Q~2~ = 01
+| Q~1~ \\ Q~2~ | 0 | 1 |
+|:------------:|:-:|:-:|
+| 0 | 0 | INST |
+| 1 | 0 | 1 |
+
+$\text{Intrarea 01:}\ Q_1Q_0 + \text{INST}Q_0$
+
+#### Q~3~Q~2~ = 10
+| Q~1~ \\ Q~2~ | 0 | 1 |
+|:------------:|:-:|:-:|
+| 0 | * | * |
+| 1 | * | * |
+
+$\text{Intrarea 10:}\ 0$
+
+#### Q~3~Q~2~ = 11
+| Q~1~ \\ Q~2~ | 0 | 1 |
+|:------------:|:-:|:-:|
+| 0 | * | * |
+| 1 | * | * |
+
+$\text{Intrarea: 11:}\ 0$
+
+### K~3~
+
+| Q~3~Q~2~ \\ Q~1~Q~0~ | 00 | 01 | 11 | 10 |
+|:--------------------:|:--:|:--:|:--:|:--:|
+| 00 | * | * | * | * |
+| 01 | * | * | * | * |
+| 11 | $\overline{\text{STATUS}}$ | 0 | 0 | 1 |
+| 10 | * | 0 | 1 | 1 |
+
+Am ales ca variabile de selecție Q~3~, Q~2~ și Q~0~.
+
+#### Q~3~Q~2~Q~1~ = 000
+
+$\text{Intrarea 000:}\ 0$
+
+#### Q~3~Q~2~Q~1~ = 001
+
+$\text{Intrarea 001:}\ 0$
+
+#### Q~3~Q~2~Q~1~ = 010
+
+$\text{Intrarea 010:}\ 0$
+
+#### Q~3~Q~2~Q~1~ = 011
+
+$\text{Intrarea 011:}\ 0$
+
+#### Q~3~Q~2~Q~1~ = 100
+
+$\text{Intrarea 100:}\ 0$
+
+#### Q~3~Q~2~Q~1~ = 101
+
+$\text{Intrarea 101:}\ 1$
+
+#### Q~3~Q~2~Q~1~ = 110
+
+$\text{Intrarea 110:}\ \overline{\text{STATUS}}\ \overline{Q_0}$
+
+#### Q~3~Q~2~Q~1~ = 111
+
+$\text{Intrarea 111:}\ Q_0$
