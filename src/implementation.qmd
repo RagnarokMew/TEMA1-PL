@@ -7,7 +7,7 @@
 Automatul a fost implementat pe 4 biți care codifică 4 variabile de stare: Q~3~ (cel mai semnificativ), Q~2~, Q~1~, Q~0~. Variabilele de stare codifică 15 
 stări pe care automatul le poate avea. Semnalele active pe 1.
 
-Stări:
+## Stări:
 
 * INACTIVE (0000) = Aparatul este oprit
 * ACTIVE (0001) = Aparatul este activ în așteptare
@@ -25,7 +25,7 @@ Stări:
 * WAIT_FIRE (0100) = Aparatul așteaptă pornirea mitralierei
 * STAT_FIRE (1011) = Aparatul a impușcat individul/obiectul
 
-Semnale Decizii:
+## Semnale Decizii:
 
 * ACT = Instrucțiunea de decizie prin care un dispozitiv auxiliar pornește sau oprește automatul
 * MAN = Instrucțiunea de decizie prin care un utilizator alege dacă automatul funcționează automat sau prin instrucțiuni primite remote
@@ -36,7 +36,7 @@ Semnale Decizii:
 * STATUS = Instrucțiunea de decizie prin care se verifică dacă mitraliera a început să tragă
 * T_O = Instrucțiunea de decizie (timer) prin care se verifică dacă a trecut perioada de timp în care trebuia să se pornească mitraliera (time_out)
 
-Semnale Ieșiri:
+## Semnale Ieșiri:
 
 * DAT = Automatul transmite informațiile primite de la senzor către modulul de țintire
 * RCV = Automatul primește instrucțiunile trimise remote
