@@ -53,12 +53,12 @@ $J_1 = \overline{ \overline{Q_3\overline{Q_2}}\ \overline{\overline{\text{MAN}}\
 | 11 | * | * | 0 | 0 |
 | 10 | * | * | 1 | 0 |
 
-$K_1 = \overline{Q_3}\ \overline{Q_2}\ \overline{Q_0} + \overline{\text{DET}}\ \overline{Q_3}\ \overline{Q_2} + \overline{\text{CAN\_FIRE}}\ \overline{Q_3}\ 
+$K_1 = \overline{Q_3}\ \overline{Q_2}\ \overline{Q_0} + Q_3\overline{Q_2}Q_0 + \overline{\text{DET}}\ \overline{Q_3}\ \overline{Q_2} + \overline{\text{CAN\_FIRE}}\ \overline{Q_3}\ 
 \overline{Q_0}$
 
 Pentru a implementa cu porți NOR am negat de 2 ori fiecare minterm
 
-$K_1 = \overline{\overline{Q_3+Q_2+Q_0} + \overline{\text{DET}+Q_3+Q_2} + \overline{\text{CAN\_FIRE} + Q_3 + Q_0}}$
+$K_1 = \overline{Q_3+Q_2+Q_0} + \overline{\overline{Q_3} + Q_2 + \overline{Q_0}} + \overline{\text{DET}+Q_3+Q_2} + \overline{\text{CAN\_FIRE} + Q_3 + Q_0}$
 
 ## Q~2~
 
