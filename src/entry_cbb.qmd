@@ -39,6 +39,11 @@ Implementat printr-un CBB de tip JK; J implementat cu porți NAND și K implemen
 $J_1 = Q_3\overline{Q_2} + \overline{\text{MAN}}\ \overline{Q_2}Q_0 + \text{STATUS}Q_3\overline{Q_0} + \overline{\text{T\_O}}\ \overline{Q_3}Q_2
 \overline{Q_0}$
 
+Pentru a implementa cu porți NAND am negat de 2 ori J~1~.
+
+$J_1 = \overline{ \overline{Q_3\overline{Q_2}}\ \overline{\overline{\text{MAN}}\ \overline{Q_2}Q_0}\ \overline{\text{STATUS}Q_3\overline{Q_0}}\ 
+\overline{\overline{\text{T\_O}}\ \overline{Q_3}Q_2\overline{Q_0}}}$
+
 ### K1
 
 | Q~3~Q~2~ \\ Q~1~Q~0~ | 00 | 01 | 11 | 10 |
@@ -48,8 +53,12 @@ $J_1 = Q_3\overline{Q_2} + \overline{\text{MAN}}\ \overline{Q_2}Q_0 + \text{STAT
 | 11 | * | * | 0 | 0 |
 | 10 | * | * | 1 | 0 |
 
-$K_1 = \overline{Q_3}\ \overline{Q_2}\ \overline{Q_0} + \overline{\text{DET}}\ \overline{Q_3} \overline{Q_2} + \overline{\text{CAN\_FIRE}}\ \overline{Q_3}\ 
+$K_1 = \overline{Q_3}\ \overline{Q_2}\ \overline{Q_0} + \overline{\text{DET}}\ \overline{Q_3}\ \overline{Q_2} + \overline{\text{CAN\_FIRE}}\ \overline{Q_3}\ 
 \overline{Q_0}$
+
+Pentru a implementa cu porți NOR am negat de 2 ori fiecare minterm
+
+$K_1 = \overline{Q_3+Q_2+Q_0} + \overline{\text{DET}+Q_3+Q_2} + \overline{\text{CAN\_FIRE} + Q_3 + Q_0}$
 
 ## Q~2~
 
