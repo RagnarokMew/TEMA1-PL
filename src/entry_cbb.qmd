@@ -1,5 +1,10 @@
 # Diagrame Karnaugh si ecuatiile rezultate pentru intrarile CBB-urilor
 
+Mențiune: În acest capitol am adăugat părți ale circuitului complet în cadrul fiecărui subcapitol, pentru a ușura vizualizarea lor, însă acestea diferă 
+puțin de implementarea lor actuală. Circuitul complet utilizează magistrale pentru $\overline{Q_i},\ i=\overline{0,3}$, dar secvențele din subcapitole 
+utilizează porți logice pentru implementarea lor (porți NOR/NAND în capitolele în care se cere implementarea cu acestea și porți NOT în restul), pentru a
+demonstra înțelegerea acestora.
+
 ## Q~0~
 
 Implementat printr-un CBB tip D și un Mux 16:1
