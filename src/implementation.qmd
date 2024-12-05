@@ -1,7 +1,14 @@
 # Implementare
 
 Automatul a fost implementat pe 4 biți care codifică 4 variabile de stare: Q~3~ (cel mai semnificativ), Q~2~, Q~1~, Q~0~. Variabilele de stare codifică 15 
-stări pe care automatul le poate avea. Semnalele active pe 1.
+stări pe care automatul le poate avea. Cele 4 variabile de stare sunt implementate in felul următor:
+
+* Q~0~ folosind CBB tip D și un MUX 16:1.
+* Q~1~ folosind CBB tip JK, având implementat cu porți de tip NAND și K cu porți de tip NOR.
+* Q~2~ folosind CBB tip JK și un MUX 2:1.
+* Q~3~ folosind CBB tip JK, având J implementat printr-un MUX 4:1 și K printr-un MUX 8:1.
+
+Ieșirile circuitului sunt implementate utilizând un decodificator 4:16, având ieșirile active pe 0.
 
 ## Schema Bloc
 
