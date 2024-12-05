@@ -1,1 +1,3 @@
 # Implementarea circuitului
+
+![Circuit](../img/full.png)
