@@ -3,18 +3,20 @@
 | Q~3~^t^ | Q~2~^t^ | Q~1~^t^ | Q~0~^t^ | Q~3~^t+1^ | Q~2~^t+1^ | Q~1~^t+1^ | Q~0~^t+1^ | Exits |
 |:-------:|:-------:|:-------:|:-------:|:---------:|:---------:|:---------:|:--------:|:------:|
 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | ACT | 0 |
-| 0 | 0 | 0 | 1 | 0 | MAN | <span style="text-decoration:overline">MAN</span> | 1 | 0 |
-| 0 | 0 | 1 | 0 | 1 | 1 | 0 | 0 | <span style="text-decoration:overline">FIRE</span> |
+| 0 | 0 | 0 | 1 | 0 | MAN | $\overline{MAN}$ | 1 | 0 |
+| 0 | 0 | 1 | 0 | 1 | 1 | 0 | 0 | FIRE |
 | 0 | 0 | 1 | 1 | 0 | DET | DET | DET | 0 |
-| 0 | 1 | 0 | 0 | 0 | 0 | <span style="text-decoration:overline">T_O</span> | 0 | 0 |
+| 0 | 1 | 0 | 0 | 0 | 0 | $\overline{T\_O}$ | 0 | 0 |
 | 0 | 1 | 0 | 1 | INST | INST | 0 | INST | 0 |
 | 0 | 1 | 1 | 0 | 0 | 0 | CAN_FIRE | 0 | 0 |
-| 0 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | <span style="text-decoration:overline">DAT</span> |
+| 0 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | DAT |
 | 1 | 0 | 0 | 0 | * | * | * | * | * |
-| 1 | 0 | 0 | 1 | 1 | 0 | 1 | 0 | <span style="text-decoration:overline">DAT</span> |
-| 1 | 0 | 1 | 0 | 0 | 1 | 1 | 0 | <span style="text-decoration:overline">LOG</span> |
-| 1 | 0 | 1 | 1 | 0 | 0 | 0 | 1 | <span style="text-decoration:overline">LOG</span> |
-| 1 | 1 | 0 | 0 | STATUS | <span style="text-decoration:overline">STATUS</span> | STATUS | STATUS | 0 |
-| 1 | 1 | 0 | 1 | 1 | 0 | 0 | 1 | <span style="text-decoration:overline">RCV</span> | 
-| 1 | 1 | 1 | 0 | 0 | ON_SIGHT | 1 | <span style="text-decoration:overline">ON_SIGHT</span> | 0 |
-| 1 | 1 | 1 | 1 | 1 | 1 | 1 | 0 | <span style="text-decoration:overline">LOG</span> | 
+| 1 | 0 | 0 | 1 | 1 | 0 | 1 | 0 | DAT |
+| 1 | 0 | 1 | 0 | 0 | 1 | 1 | 0 | LOG |
+| 1 | 0 | 1 | 1 | 0 | 0 | 0 | 1 | LOG |
+| 1 | 1 | 0 | 0 | STATUS | $\overline{STATUS}$ | STATUS | STATUS | 0 |
+| 1 | 1 | 0 | 1 | 1 | 0 | 0 | 1 | RCV | 
+| 1 | 1 | 1 | 0 | 0 | ON_SIGHT | 1 | $\small{\overline{ON\_SIGHT}}$ | 0 |
+| 1 | 1 | 1 | 1 | 1 | 1 | 1 | 0 | LOG | 
+
+: {tbl-colwidths="[5,5,5,5,15,15,15,20,15]"}
