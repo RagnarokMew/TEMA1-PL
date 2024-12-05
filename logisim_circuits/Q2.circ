@@ -186,14 +186,14 @@
     <comp lib="8" loc="(580,515)" name="Text">
       <a name="text" val="Q3"/>
     </comp>
-    <comp lib="8" loc="(592,409)" name="Text">
+    <comp lib="8" loc="(590,405)" name="Text">
       <a name="text" val="D2"/>
     </comp>
     <comp lib="8" loc="(720,410)" name="Text">
       <a name="text" val="Q2"/>
     </comp>
     <comp lib="8" loc="(720,460)" name="Text">
-      <a name="text" val="Q2"/>
+      <a name="text" val="!Q2"/>
     </comp>
     <comp lib="8" loc="(730,395)" name="Text">
       <a name="text" val="t+1"/>
