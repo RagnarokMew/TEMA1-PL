@@ -24,6 +24,8 @@ $D_0 = Q_3\overline{Q_2}Q_1Q_0 + \overline{Q_3}Q_2Q_1Q_0 + \overline{Q_3}\ \over
 
 ![Implementare Q0](./../img/Q0.png)
 
+{{< pagebreak >}}
+
 ## Q~1~
 
 Implementat printr-un CBB de tip JK; J implementat cu porți NAND și K implementat cu porți NOR
@@ -111,6 +113,8 @@ $\text{Intrarea 1:}\ \overline{Q_2}Q_1Q_0 + Q_2\overline{Q_0} + \overline{\text{
 ## Q~3~
 
 Implementat printr-un CBB de tip JK; J este implementat printr-un Mux 4:1 și K este implementat printr-un MUX 8:1
+
+{{< pagebreak >}}
 
 ### J~3~
 

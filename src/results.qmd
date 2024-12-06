@@ -23,6 +23,8 @@ $Q_3^{t+1} = \overline{Q_3}\ \overline{Q_2}Q_1\overline{Q_0} + Q_2Q_1Q_0 + Q_3\o
 $Q_2^{t+1} = \overline{Q_2}Q_1\overline{Q_0} + Q_2Q_1Q_0 + \text{ON\_SIGHT} Q_3Q_1\overline{Q_0} + \text{MAN} \overline{Q_3}\ \overline{Q_2}\ \overline{Q_1}Q_0
 + \text{DET}\overline{Q_3}Q_1Q_0 + \text{INST}\overline{Q_3}Q_2Q_0 + \overline{\text{STATUS}}Q_3\overline{Q_1}\ \overline{Q_0}$ 
 
+{{< pagebreak >}}
+
 ## Q~1~^t+1^ 
 
 | Q~3~Q~2~ \\ Q~1~Q~0~ | 00 | 01 | 11 | 10 |
