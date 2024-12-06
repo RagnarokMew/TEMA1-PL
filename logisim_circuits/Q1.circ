@@ -97,22 +97,22 @@
     <comp lib="4" loc="(830,660)" name="J-K Flip-Flop">
       <a name="appearance" val="logisim_evolution"/>
     </comp>
-    <comp lib="8" loc="(106,1050)" name="Text">
+    <comp lib="8" loc="(105,1050)" name="Text">
       <a name="text" val="CAN_FIRE"/>
+    </comp>
+    <comp lib="8" loc="(120,1070)" name="Text">
+      <a name="text" val="Q3"/>
+    </comp>
+    <comp lib="8" loc="(120,1095)" name="Text">
+      <a name="text" val="Q0"/>
     </comp>
     <comp lib="8" loc="(120,470)" name="Text">
       <a name="text" val="STATUS"/>
     </comp>
-    <comp lib="8" loc="(121,1070)" name="Text">
+    <comp lib="8" loc="(125,1010)" name="Text">
       <a name="text" val="Q3"/>
     </comp>
-    <comp lib="8" loc="(124,1095)" name="Text">
-      <a name="text" val="Q0"/>
-    </comp>
-    <comp lib="8" loc="(126,1010)" name="Text">
-      <a name="text" val="Q3"/>
-    </comp>
-    <comp lib="8" loc="(131,1035)" name="Text">
+    <comp lib="8" loc="(130,1035)" name="Text">
       <a name="text" val="Q2"/>
     </comp>
     <comp lib="8" loc="(135,270)" name="Text">
@@ -124,16 +124,16 @@
     <comp lib="8" loc="(135,505)" name="Text">
       <a name="text" val="Q0"/>
     </comp>
-    <comp lib="8" loc="(136,785)" name="Text">
+    <comp lib="8" loc="(135,785)" name="Text">
       <a name="text" val="Q3"/>
     </comp>
-    <comp lib="8" loc="(136,830)" name="Text">
+    <comp lib="8" loc="(135,830)" name="Text">
       <a name="text" val="Q0"/>
     </comp>
-    <comp lib="8" loc="(136,850)" name="Text">
+    <comp lib="8" loc="(135,850)" name="Text">
       <a name="text" val="Q3"/>
     </comp>
-    <comp lib="8" loc="(136,980)" name="Text">
+    <comp lib="8" loc="(135,980)" name="Text">
       <a name="text" val="DET"/>
     </comp>
     <comp lib="8" loc="(140,250)" name="Text">
@@ -154,13 +154,13 @@
     <comp lib="8" loc="(140,715)" name="Text">
       <a name="text" val="Q0"/>
     </comp>
-    <comp lib="8" loc="(141,810)" name="Text">
+    <comp lib="8" loc="(140,810)" name="Text">
       <a name="text" val="Q2"/>
     </comp>
-    <comp lib="8" loc="(141,910)" name="Text">
+    <comp lib="8" loc="(140,910)" name="Text">
       <a name="text" val="Q2"/>
     </comp>
-    <comp lib="8" loc="(141,935)" name="Text">
+    <comp lib="8" loc="(140,935)" name="Text">
       <a name="text" val="Q0"/>
     </comp>
     <comp lib="8" loc="(145,390)" name="Text">
@@ -175,16 +175,25 @@
     <comp lib="8" loc="(720,910)" name="Text">
       <a name="text" val="K1"/>
     </comp>
-    <comp lib="8" loc="(893,742)" name="Text">
+    <comp lib="8" loc="(800,830)" name="Text">
+      <a name="text" val="CLK"/>
+    </comp>
+    <comp lib="8" loc="(845,575)" name="Text">
+      <a name="text" val="!EN"/>
+    </comp>
+    <comp lib="8" loc="(850,800)" name="Text">
+      <a name="text" val="1"/>
+    </comp>
+    <comp lib="8" loc="(890,740)" name="Text">
       <a name="text" val="!Q1"/>
     </comp>
-    <comp lib="8" loc="(900,647)" name="Text">
+    <comp lib="8" loc="(900,645)" name="Text">
       <a name="text" val="Q1"/>
     </comp>
-    <comp lib="8" loc="(915,732)" name="Text">
+    <comp lib="8" loc="(915,635)" name="Text">
       <a name="text" val="t+1"/>
     </comp>
-    <comp lib="8" loc="(917,635)" name="Text">
+    <comp lib="8" loc="(915,730)" name="Text">
       <a name="text" val="t+1"/>
     </comp>
     <wire from="(160,1010)" to="(220,1010)"/>
@@ -303,6 +312,10 @@
     <wire from="(770,670)" to="(820,670)"/>
     <wire from="(770,690)" to="(770,930)"/>
     <wire from="(770,690)" to="(820,690)"/>
+    <wire from="(800,710)" to="(800,810)"/>
+    <wire from="(800,710)" to="(820,710)"/>
+    <wire from="(850,590)" to="(850,660)"/>
+    <wire from="(850,720)" to="(850,780)"/>
     <wire from="(880,670)" to="(950,670)"/>
     <wire from="(880,710)" to="(950,710)"/>
   </circuit>

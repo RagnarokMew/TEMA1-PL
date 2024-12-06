@@ -98,7 +98,9 @@
     <comp lib="1" loc="(450,600)" name="OR Gate">
       <a name="inputs" val="4"/>
     </comp>
-    <comp lib="2" loc="(570,430)" name="Multiplexer"/>
+    <comp lib="2" loc="(570,430)" name="Multiplexer">
+      <a name="enable" val="true"/>
+    </comp>
     <comp lib="4" loc="(620,420)" name="D Flip-Flop">
       <a name="appearance" val="logisim_evolution"/>
     </comp>
@@ -189,6 +191,18 @@
     <comp lib="8" loc="(590,405)" name="Text">
       <a name="text" val="D2"/>
     </comp>
+    <comp lib="8" loc="(595,459)" name="Text">
+      <a name="text" val="!EN"/>
+    </comp>
+    <comp lib="8" loc="(595,570)" name="Text">
+      <a name="text" val="CLK"/>
+    </comp>
+    <comp lib="8" loc="(640,365)" name="Text">
+      <a name="text" val="!EN"/>
+    </comp>
+    <comp lib="8" loc="(640,565)" name="Text">
+      <a name="text" val="1"/>
+    </comp>
     <comp lib="8" loc="(720,410)" name="Text">
       <a name="text" val="Q2"/>
     </comp>
@@ -272,8 +286,14 @@
     <wire from="(530,440)" to="(540,440)"/>
     <wire from="(550,450)" to="(550,480)"/>
     <wire from="(550,480)" to="(580,480)"/>
+    <wire from="(560,450)" to="(560,460)"/>
+    <wire from="(560,460)" to="(580,460)"/>
     <wire from="(570,430)" to="(610,430)"/>
     <wire from="(580,480)" to="(580,500)"/>
+    <wire from="(600,470)" to="(600,550)"/>
+    <wire from="(600,470)" to="(610,470)"/>
+    <wire from="(640,380)" to="(640,420)"/>
+    <wire from="(640,480)" to="(640,550)"/>
     <wire from="(670,430)" to="(730,430)"/>
     <wire from="(670,470)" to="(730,470)"/>
   </circuit>

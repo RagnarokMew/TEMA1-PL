@@ -56,7 +56,14 @@
     <a name="circuit" val="main"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(420,400)" name="Splitter">
+      <a name="appear" val="center"/>
+      <a name="facing" val="south"/>
+      <a name="fanout" val="4"/>
+      <a name="incoming" val="4"/>
+    </comp>
     <comp lib="2" loc="(440,300)" name="Multiplexer">
+      <a name="enable" val="true"/>
       <a name="select" val="4"/>
     </comp>
     <comp lib="4" loc="(570,290)" name="D Flip-Flop">
@@ -116,14 +123,26 @@
     <comp lib="8" loc="(405,480)" name="Text">
       <a name="text" val="Q2"/>
     </comp>
-    <comp lib="8" loc="(429,479)" name="Text">
+    <comp lib="8" loc="(425,480)" name="Text">
       <a name="text" val="Q1"/>
     </comp>
-    <comp lib="8" loc="(451,479)" name="Text">
+    <comp lib="8" loc="(450,480)" name="Text">
       <a name="text" val="Q0"/>
+    </comp>
+    <comp lib="8" loc="(480,425)" name="Text">
+      <a name="text" val="!EN"/>
     </comp>
     <comp lib="8" loc="(505,290)" name="Text">
       <a name="text" val="D0"/>
+    </comp>
+    <comp lib="8" loc="(515,385)" name="Text">
+      <a name="text" val="CLK"/>
+    </comp>
+    <comp lib="8" loc="(585,230)" name="Text">
+      <a name="text" val="!EN"/>
+    </comp>
+    <comp lib="8" loc="(590,415)" name="Text">
+      <a name="text" val="1"/>
     </comp>
     <comp lib="8" loc="(655,275)" name="Text">
       <a name="text" val="Q0"/>
@@ -184,15 +203,19 @@
     <wire from="(390,140)" to="(390,220)"/>
     <wire from="(390,220)" to="(400,220)"/>
     <wire from="(390,420)" to="(390,460)"/>
-    <wire from="(390,420)" to="(410,420)"/>
+    <wire from="(390,420)" to="(400,420)"/>
     <wire from="(410,420)" to="(410,460)"/>
-    <wire from="(410,420)" to="(420,420)"/>
-    <wire from="(420,380)" to="(420,420)"/>
-    <wire from="(420,420)" to="(430,420)"/>
-    <wire from="(430,420)" to="(430,460)"/>
-    <wire from="(430,420)" to="(450,420)"/>
+    <wire from="(420,380)" to="(420,400)"/>
+    <wire from="(420,420)" to="(420,460)"/>
+    <wire from="(430,380)" to="(480,380)"/>
+    <wire from="(430,420)" to="(440,420)"/>
     <wire from="(440,300)" to="(560,300)"/>
-    <wire from="(450,420)" to="(450,460)"/>
+    <wire from="(440,420)" to="(440,460)"/>
+    <wire from="(480,380)" to="(480,410)"/>
+    <wire from="(520,340)" to="(520,370)"/>
+    <wire from="(520,340)" to="(560,340)"/>
+    <wire from="(590,240)" to="(590,290)"/>
+    <wire from="(590,350)" to="(590,400)"/>
     <wire from="(620,300)" to="(670,300)"/>
     <wire from="(620,340)" to="(670,340)"/>
   </circuit>

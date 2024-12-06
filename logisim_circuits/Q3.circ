@@ -56,6 +56,16 @@
     <a name="circuit" val="main"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(480,330)" name="Splitter">
+      <a name="appear" val="center"/>
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="0" loc="(480,560)" name="Splitter">
+      <a name="appear" val="center"/>
+      <a name="facing" val="south"/>
+      <a name="fanout" val="3"/>
+      <a name="incoming" val="3"/>
+    </comp>
     <comp lib="1" loc="(190,260)" name="NOT Gate"/>
     <comp lib="1" loc="(190,480)" name="NOT Gate"/>
     <comp lib="1" loc="(190,520)" name="NOT Gate"/>
@@ -66,96 +76,113 @@
     <comp lib="1" loc="(290,500)" name="AND Gate"/>
     <comp lib="1" loc="(320,360)" name="OR Gate"/>
     <comp lib="2" loc="(500,300)" name="Multiplexer">
+      <a name="enable" val="true"/>
       <a name="select" val="2"/>
     </comp>
     <comp lib="2" loc="(500,520)" name="Multiplexer">
+      <a name="enable" val="true"/>
       <a name="select" val="3"/>
     </comp>
     <comp lib="4" loc="(640,400)" name="J-K Flip-Flop">
       <a name="appearance" val="logisim_evolution"/>
     </comp>
-    <comp lib="8" loc="(100,556)" name="Text">
+    <comp lib="8" loc="(100,555)" name="Text">
       <a name="text" val="Q0"/>
     </comp>
-    <comp lib="8" loc="(374,490)" name="Text">
+    <comp lib="8" loc="(370,490)" name="Text">
       <a name="text" val="0"/>
     </comp>
-    <comp lib="8" loc="(383,420)" name="Text">
+    <comp lib="8" loc="(380,420)" name="Text">
       <a name="text" val="0"/>
     </comp>
-    <comp lib="8" loc="(383,440)" name="Text">
+    <comp lib="8" loc="(380,440)" name="Text">
       <a name="text" val="0"/>
     </comp>
-    <comp lib="8" loc="(386,461)" name="Text">
+    <comp lib="8" loc="(385,460)" name="Text">
       <a name="text" val="0"/>
     </comp>
-    <comp lib="8" loc="(387,478)" name="Text">
+    <comp lib="8" loc="(385,475)" name="Text">
       <a name="text" val="0"/>
     </comp>
-    <comp lib="8" loc="(423,536)" name="Text">
+    <comp lib="8" loc="(420,535)" name="Text">
       <a name="text" val="1"/>
     </comp>
-    <comp lib="8" loc="(439,306)" name="Text">
+    <comp lib="8" loc="(435,305)" name="Text">
       <a name="text" val="0"/>
     </comp>
-    <comp lib="8" loc="(440,322)" name="Text">
+    <comp lib="8" loc="(440,320)" name="Text">
       <a name="text" val="0"/>
     </comp>
-    <comp lib="8" loc="(452,643)" name="Text">
+    <comp lib="8" loc="(450,640)" name="Text">
       <a name="text" val="Q3"/>
     </comp>
-    <comp lib="8" loc="(459,392)" name="Text">
+    <comp lib="8" loc="(455,390)" name="Text">
       <a name="text" val="Q3"/>
     </comp>
-    <comp lib="8" loc="(481,644)" name="Text">
+    <comp lib="8" loc="(480,640)" name="Text">
       <a name="text" val="Q2"/>
     </comp>
-    <comp lib="8" loc="(497,391)" name="Text">
+    <comp lib="8" loc="(495,390)" name="Text">
       <a name="text" val="Q2"/>
     </comp>
-    <comp lib="8" loc="(515,644)" name="Text">
+    <comp lib="8" loc="(515,640)" name="Text">
       <a name="text" val="Q1"/>
     </comp>
-    <comp lib="8" loc="(594,393)" name="Text">
+    <comp lib="8" loc="(518,342)" name="Text">
+      <a name="text" val="!EN"/>
+    </comp>
+    <comp lib="8" loc="(570,566)" name="Text">
+      <a name="text" val="!EN"/>
+    </comp>
+    <comp lib="8" loc="(590,390)" name="Text">
       <a name="text" val="J3"/>
     </comp>
-    <comp lib="8" loc="(595,452)" name="Text">
+    <comp lib="8" loc="(595,450)" name="Text">
       <a name="text" val="K3"/>
     </comp>
-    <comp lib="8" loc="(709,399)" name="Text">
+    <comp lib="8" loc="(615,510)" name="Text">
+      <a name="text" val="CLK"/>
+    </comp>
+    <comp lib="8" loc="(660,330)" name="Text">
+      <a name="text" val="!EN"/>
+    </comp>
+    <comp lib="8" loc="(660,550)" name="Text">
+      <a name="text" val="1"/>
+    </comp>
+    <comp lib="8" loc="(705,395)" name="Text">
       <a name="text" val="Q3"/>
     </comp>
-    <comp lib="8" loc="(715,482)" name="Text">
+    <comp lib="8" loc="(715,480)" name="Text">
       <a name="text" val="!Q3"/>
     </comp>
-    <comp lib="8" loc="(724,384)" name="Text">
+    <comp lib="8" loc="(720,380)" name="Text">
       <a name="text" val="t+1"/>
     </comp>
-    <comp lib="8" loc="(730,467)" name="Text">
+    <comp lib="8" loc="(730,465)" name="Text">
       <a name="text" val="t+1"/>
     </comp>
-    <comp lib="8" loc="(78,486)" name="Text">
+    <comp lib="8" loc="(75,485)" name="Text">
       <a name="text" val="STATUS"/>
     </comp>
-    <comp lib="8" loc="(94,384)" name="Text">
+    <comp lib="8" loc="(90,380)" name="Text">
       <a name="text" val="INST"/>
     </comp>
-    <comp lib="8" loc="(97,316)" name="Text">
+    <comp lib="8" loc="(95,220)" name="Text">
       <a name="text" val="Q1"/>
     </comp>
-    <comp lib="8" loc="(97,353)" name="Text">
+    <comp lib="8" loc="(95,255)" name="Text">
       <a name="text" val="Q0"/>
     </comp>
-    <comp lib="8" loc="(98,427)" name="Text">
-      <a name="text" val="Q0"/>
-    </comp>
-    <comp lib="8" loc="(99,222)" name="Text">
+    <comp lib="8" loc="(95,315)" name="Text">
       <a name="text" val="Q1"/>
     </comp>
-    <comp lib="8" loc="(99,259)" name="Text">
+    <comp lib="8" loc="(95,350)" name="Text">
       <a name="text" val="Q0"/>
     </comp>
-    <comp lib="8" loc="(99,524)" name="Text">
+    <comp lib="8" loc="(95,425)" name="Text">
+      <a name="text" val="Q0"/>
+    </comp>
+    <comp lib="8" loc="(95,520)" name="Text">
       <a name="text" val="Q0"/>
     </comp>
     <wire from="(120,220)" to="(220,220)"/>
@@ -205,22 +232,27 @@
     <wire from="(450,300)" to="(460,300)"/>
     <wire from="(450,310)" to="(460,310)"/>
     <wire from="(460,350)" to="(460,370)"/>
-    <wire from="(460,350)" to="(480,350)"/>
-    <wire from="(460,590)" to="(460,620)"/>
-    <wire from="(460,590)" to="(480,590)"/>
-    <wire from="(480,320)" to="(480,350)"/>
-    <wire from="(480,350)" to="(500,350)"/>
-    <wire from="(480,560)" to="(480,590)"/>
-    <wire from="(480,590)" to="(480,620)"/>
-    <wire from="(480,590)" to="(500,590)"/>
+    <wire from="(460,350)" to="(470,350)"/>
+    <wire from="(460,580)" to="(460,620)"/>
+    <wire from="(460,580)" to="(470,580)"/>
+    <wire from="(480,320)" to="(480,330)"/>
+    <wire from="(480,350)" to="(480,370)"/>
+    <wire from="(480,580)" to="(480,620)"/>
+    <wire from="(490,320)" to="(490,340)"/>
+    <wire from="(490,340)" to="(500,340)"/>
+    <wire from="(490,560)" to="(550,560)"/>
+    <wire from="(490,580)" to="(500,580)"/>
     <wire from="(500,300)" to="(540,300)"/>
-    <wire from="(500,350)" to="(500,370)"/>
     <wire from="(500,520)" to="(540,520)"/>
-    <wire from="(500,590)" to="(500,620)"/>
+    <wire from="(500,580)" to="(500,620)"/>
     <wire from="(540,300)" to="(540,410)"/>
     <wire from="(540,410)" to="(630,410)"/>
     <wire from="(540,430)" to="(540,520)"/>
     <wire from="(540,430)" to="(630,430)"/>
+    <wire from="(620,450)" to="(620,500)"/>
+    <wire from="(620,450)" to="(630,450)"/>
+    <wire from="(660,350)" to="(660,400)"/>
+    <wire from="(660,460)" to="(660,530)"/>
     <wire from="(690,410)" to="(730,410)"/>
     <wire from="(690,450)" to="(730,450)"/>
   </circuit>
