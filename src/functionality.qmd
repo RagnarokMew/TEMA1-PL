@@ -1,4 +1,4 @@
-# Functionalitate
+# Funcționalitate
 
 Automatul pornește în starea ``INACTIVE`` în care este oprit. Acesta se activează când primeste semnalul de pornire (``ACT``) și ajunge în starea ``ACTIVE``.
 
