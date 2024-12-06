@@ -2,9 +2,9 @@ project:
   type: book
 
 book:
-  title: "Mitraliera Santinela Automata (Sentry Gun)"
-  author: "Simion Stefan"
-  date: "12/1/2024"
+  title: "Mitralieră Santinelă Automată (Sentry Gun)"
+  author: "Simion Ștefan 314CC"
+  date: "12/7/2024"
   chapters:
     - index.qmd
     - ./src/implementation.qmd
