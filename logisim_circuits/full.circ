@@ -171,7 +171,6 @@
       <a name="enable" val="true"/>
     </comp>
     <comp lib="2" loc="(2520,1530)" name="Decoder">
-      <a name="enable" val="false"/>
       <a name="select" val="4"/>
     </comp>
     <comp lib="4" loc="(1570,360)" name="D Flip-Flop">
@@ -249,7 +248,7 @@
     <comp lib="8" loc="(1570,2260)" name="Text">
       <a name="text" val="0"/>
     </comp>
-    <comp lib="8" loc="(1591,481)" name="Text">
+    <comp lib="8" loc="(1590,480)" name="Text">
       <a name="text" val="1"/>
     </comp>
     <comp lib="8" loc="(1655,345)" name="Text">
@@ -273,10 +272,10 @@
     <comp lib="8" loc="(1725,2390)" name="Text">
       <a name="text" val="K3"/>
     </comp>
-    <comp lib="8" loc="(1749,1907)" name="Text">
+    <comp lib="8" loc="(1745,1905)" name="Text">
       <a name="text" val="1"/>
     </comp>
-    <comp lib="8" loc="(1791,2461)" name="Text">
+    <comp lib="8" loc="(1790,2460)" name="Text">
       <a name="text" val="1"/>
     </comp>
     <comp lib="8" loc="(1810,745)" name="Text">
@@ -309,7 +308,7 @@
     <comp lib="8" loc="(1860,2405)" name="Text">
       <a name="text" val="t+1"/>
     </comp>
-    <comp lib="8" loc="(1970,1129)" name="Text">
+    <comp lib="8" loc="(1970,1125)" name="Text">
       <a name="text" val="1"/>
     </comp>
     <comp lib="8" loc="(2010,1090)" name="Text">
@@ -663,6 +662,8 @@
     <wire from="(230,370)" to="(230,820)"/>
     <wire from="(230,820)" to="(1450,820)"/>
     <wire from="(230,820)" to="(230,1980)"/>
+    <wire from="(2410,1470)" to="(2410,1530)"/>
+    <wire from="(2410,1530)" to="(2510,1530)"/>
     <wire from="(2500,1590)" to="(2500,2670)"/>
     <wire from="(2510,1590)" to="(2510,2680)"/>
     <wire from="(2520,1530)" to="(2520,1570)"/>
@@ -884,12 +885,14 @@
     <wire from="(820,100)" to="(820,120)"/>
     <wire from="(820,120)" to="(1590,120)"/>
     <wire from="(820,120)" to="(820,580)"/>
+    <wire from="(820,1470)" to="(2410,1470)"/>
+    <wire from="(820,1470)" to="(820,1830)"/>
     <wire from="(820,1830)" to="(1570,1830)"/>
     <wire from="(820,1830)" to="(820,2140)"/>
     <wire from="(820,2140)" to="(1790,2140)"/>
     <wire from="(820,2140)" to="(820,2810)"/>
     <wire from="(820,580)" to="(1450,580)"/>
-    <wire from="(820,580)" to="(820,1830)"/>
+    <wire from="(820,580)" to="(820,1470)"/>
     <wire from="(860,100)" to="(860,590)"/>
     <wire from="(860,1090)" to="(1510,1090)"/>
     <wire from="(860,1090)" to="(860,1840)"/>
